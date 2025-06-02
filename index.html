@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Chatbot</title>
+  <title>CRAIG – Your VRChat Dating CoachAI</title>
   <style>
     body {
       margin: 0;
@@ -11,29 +11,99 @@
       font-family: Arial, sans-serif;
       background: #f7f7f7;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
     }
+
+    .header {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: green;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
     .chatbot-container {
       width: 100%;
       max-width: 400px;
-      height: min(780px, 90vh); /* 90% of viewport height, up to 780px */
+      height: min(780px, 90vh);
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
       border-radius: 12px;
       overflow: hidden;
       background: white;
+      margin: 20px 0;
     }
+
     iframe {
       width: 100%;
       height: 100%;
       border: none;
     }
+
+    .info-section {
+      max-width: 400px;
+      padding: 0 20px 40px;
+      text-align: center;
+    }
+
+    .info-block {
+      margin-bottom: 25px;
+    }
+
+    .info-block h3 {
+      margin-bottom: 5px;
+    }
+
+    .info-block p {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .info-block a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .info-block a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+  <div class="header">
+    <div class="eyebrow">By Michael Zelbel, the world’s first certified VR Dating Coach</div>
+    <h1>CRAIG – Your VRChat Dating CoachAI</h1>
+  </div>
+
   <div class="chatbot-container">
     <iframe src="https://flowiseai-orchestrator-u34885.vm.elestio.app/chatbot/073f8b5c-253d-4f7a-8c03-0fa7829cbf2f"></iframe>
+  </div>
+
+  <div class="info-section">
+    <div class="info-block">
+      <h3>📖 The VRChat Pleasure Manual</h3>
+      <p>Your step-by-step guide to flirting, connecting, and getting intimate in VRChat.</p>
+      <a href="https://michaelzelbelde.gumroad.com/l/vrc" target="_blank">Get the eBook</a>
+    </div>
+
+    <div class="info-block">
+      <h3>🎯 Build Your VR Dating Circle</h3>
+      <p>Join my daily habit coaching on Coach.me and grow your confidence and virtual connections.</p>
+      <a href="https://www.coach.me/michaelzelbel" target="_blank">Join the Program</a>
+    </div>
+
+ 
   </div>
 </body>
 </html>
